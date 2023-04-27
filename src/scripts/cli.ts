@@ -5,6 +5,7 @@ const chalk = require('chalk')
 import { updateConfig, readConfig, getConfigSource } from '../common/config'
 import plaid from '../integrations/plaid/setup'
 import google from '../integrations/google/setup'
+import googleLogin from '../integrations/google/login'
 import csvImport from '../integrations/csv-import/setup'
 import csvExport from '../integrations/csv-export/setup'
 import accountSetup from '../integrations/plaid/accountSetup'
@@ -42,6 +43,7 @@ import { logError } from '../common/logging'
         'plaid-setup': plaid,
         'account-setup': accountSetup,
         'google-setup': google,
+        'google-login': googleLogin,
         'csv-import-setup': csvImport,
         'csv-export-setup': csvExport
     }
